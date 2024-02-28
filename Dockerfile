@@ -21,7 +21,7 @@ ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES compute,utility
 ################################ end nvidia opencl driver ################################
 
-ENV HASHCAT_VERSION        v6.2.6
+ENV HASHCAT_VERSION        master
 ENV HASHCAT_UTILS_VERSION  v1.9
 ENV HCXTOOLS_VERSION       6.2.7
 ENV HCXDUMPTOOL_VERSION    6.2.7
