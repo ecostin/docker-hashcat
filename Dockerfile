@@ -36,7 +36,7 @@ RUN update-pciids
 
 WORKDIR /root
 
-RUN git clone https://github.com/hashcat/hashcat.git && cd hashcat && git checkout ${HASHCAT_VERSION} && make install -j4
+RUN git clone https://github.com/ecostin/hashcat.git && cd hashcat && git checkout ${HASHCAT_VERSION} && make install -j4
 
 RUN git clone https://github.com/hashcat/hashcat-utils.git && cd hashcat-utils/src && git checkout ${HASHCAT_UTILS_VERSION} && make
 RUN ln -s /root/hashcat-utils/src/cap2hccapx.bin /usr/bin/cap2hccapx
